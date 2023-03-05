@@ -56,6 +56,7 @@
   align-items: flex-end;
   text-decoration: none;
   font-size: var(--fs-px16);
+  font-weight: 400;
   color: black;
   height: 65px;
 }
@@ -400,6 +401,13 @@ input{
   font-weight: 700;
   margin: 13px 13.9% 21px 7.33%;
 }
+.titreA1{
+  width: 81.8%;
+  height: 15px;
+  font-size: var(--fs-px16);
+  font-weight: 700;
+  margin: 13px 13.9% 21px 7.33%;
+}
 /* Pied de page */
 footer{
   width: 100%;
@@ -432,9 +440,123 @@ footer{
 }
 li{
   list-style-type: none;
+  margin-bottom: 12px;
 }
 .lienPied{
   font-size: var(--fs-px16);
   font-weight: 400;
-  margin-bottom: 12px;
+}
+/* -----RESPONSIVE----- */
+
+@media screen and (max-width: 1024px){
+  /* General */
+  #page{
+    border: 1px red solid;
+    height: 2076px;
+  }
+  /* HEADER */
+  /* Section menu */
+  #logo{
+    margin: 44px 0 0 72px;
+  }
+  #navA{
+    padding-right: 44px;
+  }
+  #titreSite{
+    margin: 63px 0 0 72px;
+  }
+  /* Filtres */
+  #recherche{
+    margin: 20px 0 0 72px;
+  }
+  #filtreBoite{
+    margin: 32px 0 0 72px;
+  }
+  #filtre{
+    width: 89%;
+  }
+  #information{
+    margin: 50px 0 0 72px;
+  }
+  /* Affichage hebergement */
+  #resultat{
+    width: 86.03%;
+    display: flex;
+    flex-direction: column;
+    margin: 39px 4.5em 0 4.5em;
+    height: 949px;
+  }
+  #hebergement{
+    width: 100%;
+  }
+  #titrePop{
+    width: 90.67%;
+    margin-top: 34px;
+  }
+  #populaire{
+    margin-top: 53px;
+    height: 270px;
+    width: 100%;
+  }
+  #photoPop{
+    display: flex;
+    flex-direction: row;
+    margin: 26px 4.5% 48px 4.5%;
+    width: 90%;
+    height: 144px;
+  }
+  .photoCadrePop{
+    width: 29.78%;
+  }
+  .textePhotoPop{
+    margin-top: 12px;
+  }
+  .titrePhotoPop{
+    font-size: var(--fs-px14);
+  }
+  /* Activites */
+  #activites{
+    width: 86.03%;
+    margin: 70px 7.04% 0 7.04%;
+    height: 379px;
+  }
+  #titreActivite{
+    margin-left: 9px;
+  }
+  #actvt{
+    height: 307.3px;
+  }
+  .cadreActvt{
+    height: 327px;
+  }
+  .photoA{
+    height: 267px;
+  }
+  .photoA1{
+    width: 120%;
+    height: 267px;
+  }
+  .texteA{
+    height: 56px;
+  }
+  .titreA{
+    margin-top: 20px;
+  }
+  .titreA1{
+    margin-top: 9px;
+  }
+  /* Footer */
+  #pied{
+    width: 86.03%;
+    margin: 0px 7.06% 0 7.06%;
+  }
+  #boite1{
+    margin-left: 8%;
+  }
+  #boite2{
+    margin-left: 9.25%;
+  }
+  #boite3{
+    margin-left: 9.34%;
+  }
 }
