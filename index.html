@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,19 +15,19 @@
   <div id="page">
     <!-- HAUT DE PAGE -->
     <header>
-      <section id="menu">
-        <article id="titre">
+      <div id="menu">
+        <div id="titre">
           <img id="logo" src="images/logo/Booki@3x.png" alt="booki">
-        </article>
-        <article id="navigation">
+        </div>
+        <div id="navigation">
           <div id="navH">
             <a id="lienH" href="#titreH">Hébergements</a>
           </div>
           <div id="navA">
             <a  id="lienA" href="#titreActivite">Activités</a>
           </div>
-        </article>
-      </section>
+        </div>
+      </div>
       <section id="titreSite">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p id="description">En plein centre-ville ou en pleine nature</p>
@@ -37,22 +36,22 @@
     <!-- CORPS DE PAGE -->
     <main>
       <!-- block recherche/formulaire -->
-      <section id="options">
-        <article id="recherche">
-          <form method="post" action="">
-            <label for="localiser"><i class="fa-solid fa-location-dot"></i></label>
-            <input type="text" value="" />
+      <div id="options">
+        <div id="recherche">
+          <form method="post" action="#" name="localiser">
+            <label id="localiser"><i class="fa-solid fa-location-dot"></i></label>
+            <input type="text">
             <button class="btn1">Rechercher</button>
             <button class="btn2"><i class="fa-solid fa-magnifying-glass"></i></button>
           </form>
-        </article>
-      </section>
+        </div>
+      </div>
       <!-- block Filtres -->
-      <section id="filtreBoite">
+      <div id="filtreBoite">
         <div id="titreBoite">
           <p id="titreFiltre">Filtres</p>
         </div>
-        <article id="filtre">
+        <div id="filtre">
           <a class="choix" href="#">
             <div class="icon">
               <i class="fa-solid fa-money-bill-wave choixI"></i>
@@ -85,20 +84,20 @@
               <p class="choixP">Animaux autorisés</p>
             </div>
           </a>
-        </article>
-      </section>
+        </div>
+      </div>
       <!-- block information -->
-      <section id="information">
-        <article id="info">
+      <div id="information">
+        <div id="info">
           <div id="infoBoite">
             <i class="fa-solid fa-info infoI"></i>
           </div>
           <p id="infoP">Plus de 500 logements sont disponibles dans cette ville</p>
-        </article>
-      </section>
+        </div>
+      </div>
       <!-- Affichage du rersultat de recherche et des filtres - partie hebergement et populaire -->
       <!-- 1ere parie affichage Hébergement -->
-      <section id="resultat">
+      <div id="resultat">
         <article id="hebergement" class="hebergement">
           <h2 id="titreH">Hébergements à Marseille</h2>
           <div id="photoHbgt">
@@ -201,7 +200,7 @@
               </div>
             </a>
           </div>
-          <article id="plus"><a href="#" id="lienPlus">Afficher plus</a></article>
+          <div id="plus"><a href="#" id="lienPlus">Afficher plus</a></div>
         </article>
         <!-- 2ième parie affichage Populaire -->
         <article id="populaire" class="populaire">
@@ -266,11 +265,11 @@
             </a>
           </div>
         </article>
-      </section>
+      </div>
       <!-- Affichage du rersultat de recherche et des filtres - partie Activités -->
       <section id="activites">
         <h2 id="titreActivite">Activités à Marseille</h2>
-        <article id="actvt">
+        <div id="actvt">
           <div class="cadreActvt">
             <div class="cadreA">
               <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="reno" class="photoA">
@@ -303,12 +302,12 @@
               </div>
             </div>
           </div>
-        </article>
+        </div>
       </section>
     </main>
     <!-- PIED DE PAGE -->
     <footer>
-      <section id="pied">
+      <div id="pied">
         <article id="boite1" class="boitePied">
           <h2 class="titrePied">À propos</h2>
           <ul>
@@ -331,7 +330,7 @@
             <li><a href="#" class="lienPied">Nous contacter</a></li>
           </ul>
         </article>
-      </section>
+      </div>
     </footer>
   </div>
 </body>
