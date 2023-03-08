@@ -270,11 +270,11 @@ input{
   object-fit: cover;
 }
 .textePhoto{
-  margin-left: 3.5%;
+  margin-left: 6.73%;
 }
 .titrePhoto{
   margin-top: 4px;
-  font-size: var(--fs-px16);
+  font-size: 1em;
   font-weight: 700;
   color: #000;
 }
@@ -285,6 +285,7 @@ input{
   color: #000;
 }
 .notation{
+  margin-top: 3px;
   width: 68px;
   height: 12px;
 }
@@ -365,6 +366,7 @@ input{
 .titrePhotoPop{
   font-size: var(--fs-px16);
   font-weight: 700;
+  color: #000;
 }
 .prixPop{
   margin-top: 5px;
@@ -469,6 +471,12 @@ li{
   font-weight: 400;
 }
 /* -----RESPONSIVE----- */
+@media screen and (max-width: 1103px){
+  /* hebergement */
+  .textePhoto{
+    margin-left: 0;
+  }
+}
 /* Affichage pour tablette */
 @media screen and (max-width: 1024px){
   /* General */
@@ -515,14 +523,17 @@ li{
   #hebergement{
     width: 100%;
   }
+  /* Affichage populaire */
   #titrePop{
     width: 90.67%;
     margin-top: 34px;
   }
   #populaire{
     margin-top: 53px;
-    height: 270px;
     width: 100%;
+  }
+  .populaire{
+    height: 270px;
   }
   #photoPop{
     display: flex;
@@ -536,9 +547,11 @@ li{
   }
   .textePhotoPop{
     margin-top: 12px;
+    text-decoration: none;
   }
   .titrePhotoPop{
     font-size: var(--fs-px14);
+    color: #000;
   }
   /* Activites */
   #activites{
@@ -592,7 +605,6 @@ li{
   #page{
     width: 375px;
     height: 4113px;
-    border: 1px red solid;
   }
   /* HAUT DE PAGE */
   /*menu*/
@@ -644,7 +656,7 @@ li{
   /* CORPS DE PAGE */
   #recherche {
     margin: 26px 5.35% 0 5.35%;
-    width: 332px;
+    width: 85.54%;
   }
   form {
     display: flex;
@@ -652,7 +664,7 @@ li{
     height: auto;
   }
   input{
-    width: 232px;
+    width: 100%;
   }
   .btn1{
     display: none;
@@ -671,11 +683,127 @@ li{
   /* Filtre */
   #filtreBoite {
     display: flex;
-    margin: 34px 0 0 0;
+    flex-direction: column;
+    width: 85.54%;
+    height: 165px;
+    margin: 34px 5.34% 0 5.34%;
   }
   #filtre{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
+  }
+  .choix{
+    width: 46%;
+  }
+  .choixP{
+    font-size: 11px;
+  }
+  .icon{
+    padding: 0 5px 0 14px;
+  }
+  .filtreP{
+    padding: 0 0 0 0;
+  }
+  /* information */
+  #information{
+    display: flex;
+    width: 100%;
+    margin: 40px 0 0 0;
+    height: 57px;
+    
+  }
+  #infoBoite{
+    width: 8%;
+    margin: 0 1% 0 5.34%;
+  }
+  /* Partie : populaire */
+  #resultat{
+    flex-direction: column-reverse;
+    margin: 84px 0 0 0;
+    width: 100%;
+    height: 1804px;
+  }
+  .populaire{
+    height: 580px;
+    border-radius: 0;
+  }
+  #titrePop{
+    width: 89%;
+    margin: 26px 5.34% 0 5.34%;
+  }
+  #photoPop{
+    display: flex;
+    flex-direction: column;
+    margin: 26px 4.5% 36px 4.5%;
+    height: auto;
+  }
+  .photoCadrePop{
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  /* Partie : hebergement */
+  .hebergement{
+    height: 1299px;
+    border-radius: 0;
+    background: #fff;
+  }
+  #titreH{
+    margin: 26px 75px 0px 20px;
+  }
+  #photoHbgt{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 92%;
+    height: auto;
+  }
+  .photoCadre{
+    width: 98%;
+    margin: 6px 0;
+  }
+  /* affichage plus*/
+  #plus{
+    display: none;
+  }
+  /* Partie : activités*/
+  #activites{
+    height: 886px;
+    margin: 142px 5% 0 5%;
+    width: 89.07%;
+  }
+  #titreActivite {
+    margin-left: 0;
+    width: 60%;
+  }
+  #actvt{
+    display: flex;
+    flex-direction: column;
+    height: 812px;
+  }
+  .cadreActvt {
+    width: 100%;
+    height: 190px;
+  }
+  .cadreA{
+    width: 100%;
+    height: 134px;
+  }
+  .photoA{
+    height: 134px;
+  }
+  .photoA1{
+    width: 120%;
+    height: 134px;
+    object-fit: cover;
+  }
+  /* footer */
+  #pied{
+    display: flex;
+    flex-direction: column;
+    height: 524px;
+    width: 100%;
+    margin: 0;
   }
 }
